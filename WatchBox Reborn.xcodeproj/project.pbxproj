@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F232E151EB79ED2004D650D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F232E141EB79ED2004D650D /* AppDelegate.swift */; };
+		5F232E171EB79ED2004D650D /* MovieFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F232E161EB79ED2004D650D /* MovieFeedController.swift */; };
+		5F232E1C1EB79ED2004D650D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F232E1B1EB79ED2004D650D /* Assets.xcassets */; };
+		5F232E271EB79F58004D650D /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F232E261EB79F58004D650D /* MovieCell.swift */; };
+		5F232E291EB79F73004D650D /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F232E281EB79F73004D650D /* BaseCell.swift */; };
+		5F232E2B1EB7A151004D650D /* MoveAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F232E2A1EB7A151004D650D /* MoveAPIService.swift */; };
+		5F232E2D1EB7A175004D650D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F232E2C1EB7A175004D650D /* Movie.swift */; };
+		5F7EB9D11EC5F37900BD1366 /* SavedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7EB9D01EC5F37900BD1366 /* SavedController.swift */; };
+		5F9123D61EBA236300D235AE /* GenresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9123D51EBA236300D235AE /* GenresController.swift */; };
+		5FCBDB651EC2253300CE7C98 /* CastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCBDB641EC2253300CE7C98 /* CastController.swift */; };
+		5FCBDB671EC2254B00CE7C98 /* CastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCBDB661EC2254B00CE7C98 /* CastCell.swift */; };
+		5FE03D081EC505760057F16F /* CastMovieFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE03D071EC505760057F16F /* CastMovieFeedController.swift */; };
+		5FF704451EB8C98600F46C19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF704441EB8C98600F46C19 /* Extensions.swift */; };
+		5FF704471EB8CC1300F46C19 /* MovieInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF704461EB8CC1300F46C19 /* MovieInfoController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F232E111EB79ED2004D650D /* WatchBox Reborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchBox Reborn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F232E141EB79ED2004D650D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F232E161EB79ED2004D650D /* MovieFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFeedController.swift; sourceTree = "<group>"; };
+		5F232E1B1EB79ED2004D650D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F232E201EB79ED2004D650D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F232E261EB79F58004D650D /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		5F232E281EB79F73004D650D /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		5F232E2A1EB7A151004D650D /* MoveAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveAPIService.swift; sourceTree = "<group>"; };
+		5F232E2C1EB7A175004D650D /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		5F7EB9D01EC5F37900BD1366 /* SavedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedController.swift; sourceTree = "<group>"; };
+		5F9123D51EBA236300D235AE /* GenresController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresController.swift; sourceTree = "<group>"; };
+		5FCBDB641EC2253300CE7C98 /* CastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastController.swift; sourceTree = "<group>"; };
+		5FCBDB661EC2254B00CE7C98 /* CastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastCell.swift; sourceTree = "<group>"; };
+		5FE03D071EC505760057F16F /* CastMovieFeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastMovieFeedController.swift; sourceTree = "<group>"; };
+		5FF704441EB8C98600F46C19 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5FF704461EB8CC1300F46C19 /* MovieInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfoController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F232E0E1EB79ED2004D650D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F232E081EB79ED1004D650D = {
+			isa = PBXGroup;
+			children = (
+				5F232E131EB79ED2004D650D /* WatchBox Reborn */,
+				5F232E121EB79ED2004D650D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F232E121EB79ED2004D650D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F232E111EB79ED2004D650D /* WatchBox Reborn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F232E131EB79ED2004D650D /* WatchBox Reborn */ = {
+			isa = PBXGroup;
+			children = (
+				5F232E141EB79ED2004D650D /* AppDelegate.swift */,
+				5FCBDB691EC2257400CE7C98 /* Supporters */,
+				5FCBDB681EC2255200CE7C98 /* Controllers */,
+				5FCBDB6B1EC2258200CE7C98 /* Helpers */,
+				5FCBDB6A1EC2257C00CE7C98 /* Models */,
+				5F232E1B1EB79ED2004D650D /* Assets.xcassets */,
+				5F232E201EB79ED2004D650D /* Info.plist */,
+			);
+			path = "WatchBox Reborn";
+			sourceTree = "<group>";
+		};
+		5FCBDB681EC2255200CE7C98 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FF704461EB8CC1300F46C19 /* MovieInfoController.swift */,
+				5FCBDB641EC2253300CE7C98 /* CastController.swift */,
+				5FE03D071EC505760057F16F /* CastMovieFeedController.swift */,
+				5F7EB9D01EC5F37900BD1366 /* SavedController.swift */,
+				5F232E161EB79ED2004D650D /* MovieFeedController.swift */,
+				5F9123D51EBA236300D235AE /* GenresController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5FCBDB691EC2257400CE7C98 /* Supporters */ = {
+			isa = PBXGroup;
+			children = (
+				5F232E261EB79F58004D650D /* MovieCell.swift */,
+				5F232E2A1EB7A151004D650D /* MoveAPIService.swift */,
+				5FCBDB661EC2254B00CE7C98 /* CastCell.swift */,
+				5F232E281EB79F73004D650D /* BaseCell.swift */,
+			);
+			name = Supporters;
+			sourceTree = "<group>";
+		};
+		5FCBDB6A1EC2257C00CE7C98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F232E2C1EB7A175004D650D /* Movie.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5FCBDB6B1EC2258200CE7C98 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5FF704441EB8C98600F46C19 /* Extensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F232E101EB79ED2004D650D /* WatchBox Reborn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F232E231EB79ED2004D650D /* Build configuration list for PBXNativeTarget "WatchBox Reborn" */;
+			buildPhases = (
+				5F232E0D1EB79ED2004D650D /* Sources */,
+				5F232E0E1EB79ED2004D650D /* Frameworks */,
+				5F232E0F1EB79ED2004D650D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchBox Reborn";
+			productName = "WatchBox Reborn";
+			productReference = 5F232E111EB79ED2004D650D /* WatchBox Reborn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F232E091EB79ED2004D650D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Don Bytyqi";
+				TargetAttributes = {
+					5F232E101EB79ED2004D650D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 37QC2MJDWB;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5F232E0C1EB79ED2004D650D /* Build configuration list for PBXProject "WatchBox Reborn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F232E081EB79ED1004D650D;
+			productRefGroup = 5F232E121EB79ED2004D650D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F232E101EB79ED2004D650D /* WatchBox Reborn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F232E0F1EB79ED2004D650D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F232E1C1EB79ED2004D650D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F232E0D1EB79ED2004D650D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9123D61EBA236300D235AE /* GenresController.swift in Sources */,
+				5F232E291EB79F73004D650D /* BaseCell.swift in Sources */,
+				5F232E171EB79ED2004D650D /* MovieFeedController.swift in Sources */,
+				5FCBDB671EC2254B00CE7C98 /* CastCell.swift in Sources */,
+				5F232E2D1EB7A175004D650D /* Movie.swift in Sources */,
+				5F7EB9D11EC5F37900BD1366 /* SavedController.swift in Sources */,
+				5F232E2B1EB7A151004D650D /* MoveAPIService.swift in Sources */,
+				5FF704471EB8CC1300F46C19 /* MovieInfoController.swift in Sources */,
+				5FE03D081EC505760057F16F /* CastMovieFeedController.swift in Sources */,
+				5FCBDB651EC2253300CE7C98 /* CastController.swift in Sources */,
+				5F232E151EB79ED2004D650D /* AppDelegate.swift in Sources */,
+				5F232E271EB79F58004D650D /* MovieCell.swift in Sources */,
+				5FF704451EB8C98600F46C19 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5F232E211EB79ED2004D650D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+			};
+			name = Debug;
+		};
+		5F232E221EB79ED2004D650D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F232E241EB79ED2004D650D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 37QC2MJDWB;
+				INFOPLIST_FILE = "WatchBox Reborn/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donbytyqi.WatchBox-Reborn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F232E251EB79ED2004D650D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 37QC2MJDWB;
+				INFOPLIST_FILE = "WatchBox Reborn/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donbytyqi.WatchBox-Reborn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F232E0C1EB79ED2004D650D /* Build configuration list for PBXProject "WatchBox Reborn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F232E211EB79ED2004D650D /* Debug */,
+				5F232E221EB79ED2004D650D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F232E231EB79ED2004D650D /* Build configuration list for PBXNativeTarget "WatchBox Reborn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F232E241EB79ED2004D650D /* Debug */,
+				5F232E251EB79ED2004D650D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F232E091EB79ED2004D650D /* Project object */;
+}
