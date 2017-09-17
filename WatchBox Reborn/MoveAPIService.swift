@@ -43,7 +43,7 @@ class MovieAPIService: NSObject {
         var b = "https://api.themoviedb.org/3/"
         var t = type ?? "popular"
         var m = isMovie ?? "movie"
-        var baseURL = b + m + "/" + t + "?api_key=087d599aa9589c52c4271a3eb196016e&language=en-US&page=\(page)"
+        var baseURL = b + m + "/" + t + "?api_key=your_api_key&language=en-US&page=\(page)"
         var stringToURL: URL?
         stringToURL = URL(string: baseURL)
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
